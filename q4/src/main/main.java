@@ -17,9 +17,9 @@ public class main {
 	
 int i,j;
 Gift tmp ; 
-for(i=0 ;i<=60 ; i++)
+for(i=0 ;i<60 ; i++)
 	{
-		for(j=0 ;j<=60 ; j++)
+		for(j=0 ;j<60 ; j++)
 		{
 			if(gt[i].price > gt[j].price)
 			{
@@ -28,7 +28,22 @@ for(i=0 ;i<=60 ; i++)
 				gt[j] = tmp;
 			}
 		}
-	}		
+	}
+Couple cc[] = new Couple[60];
+for(i=0;i<60;i++)
+	cp[i].happines();
+Couple z;
+for(i=0;i<60;i++)
+	for(j=0;j<60;j++)
+	{
+		if(cc[i].happiness > cc[j].happiness)
+			z = cc[i];
+			cc[i] = cc[j];
+			cc[j] = z;
+	}
+
+int n=5;
+breakup brkp = new breakup(cc,n);
 
 
 }
